@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Pig Dice Redux</title>
+  </head>
+  <body>
+
+    <div class="container" id="startScreen">
+      <h1>How do you want to play Pig Dice??</h1>
+      <input type="radio" name="playerOption" value="Solo" checked>Single Player</input>
+      <input type="radio" name="playerOption" value="Two">Two Player</input>
+      <button id="Play">Play Now!</button>
+    </div>
+
+    <div class="container" id="singlePlayer">
+      <h3><span id="player1"></span></h3>
+      <p>Your rolls: <span id="player1-results"></span></p>
+      <p>Your score: <span id="player1-score"></span></p>
+    </div>
+
+    <div class="container" id="secondPlayer">
+      <h3><span id="player2"></span></h3>
+      <p>Your rolls: <span id="player2-results"></span></p>
+      <p>Your score: <span id="player2-score"></span></p>
+    </div>
+
+    <div class="container" id="computer">
+      <h3><span id="computerName"></span></h3>
+      <p>Computer rolls: <span id="ai-rolls"></span></p>
+      <p>Computer Score: <span id="ai-score"></span></p>
+    </div>
+
+    <div class="container" id="buttons">
+      <button id="roll" class="btn-primary btn-lg button">Roll!</button>
+      <button id="hold" class="btn-danger btn-lg button">Hold!</button>
+    </div>
+
+  </body>
+</html>
